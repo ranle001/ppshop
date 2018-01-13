@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+ivy_conf_path=${workspace_loc\:com.foresee/public/ivysettings.xml}
+propertyFiles=${workspace_loc\:com.foresee/public/ivy.properties}
+resolveOnStartup=0

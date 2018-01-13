@@ -1,0 +1,7 @@
+contextsDir=D\:\\Documments\\fbrp-ide-64bit-v3.0.0.20140321\\fbrp-ide\\apache-tomcat-7.0.52\\conf\\Catalina\\localhost
+eclipse.preferences.version=1
+jvmParameters=-Xms128m+-Xmx256m;-XX%3APermSize%3D64m+-XX%3AMaxPermSize%3D128m;
+tomcatBase=D\:\\Documments\\fbrp-ide-64bit-v3.0.0.20140321\\fbrp-ide\\apache-tomcat-7.0.52
+tomcatConfigFile=D\:\\Documments\\fbrp-ide-64bit-v3.0.0.20140321\\fbrp-ide\\apache-tomcat-7.0.52\\conf\\server.xml
+tomcatDir=D\:\\Documments\\fbrp-ide-64bit-v3.0.0.20140321\\fbrp-ide\\apache-tomcat-7.0.52
+tomcatVersion=tomcatV7
