@@ -1,5 +1,14 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
+org.eclipse.jdt.core.classpathVariable.ASPECTJRT_LIB=D\:/Documments/fbrp-ide-64bit-v3.0.0.20140321/fbrp-ide/eclipse/plugins/org.aspectj.runtime_1.7.3.20130613144500-a.jar
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=D\:/Documments/fbrp-ide-64bit-v3.0.0.20140321/fbrp-ide/eclipse
+org.eclipse.jdt.core.classpathVariable.FINDBUGS_ANNOTATIONS=D\:/Documments/fbrp-ide-64bit-v3.0.0.20140321/fbrp-ide/eclipse/foresee/findbugsplugins/eclipse/plugins/edu.umd.cs.findbugs.plugin.eclipse_2.0.0.20111220/lib/annotations.jar
+org.eclipse.jdt.core.classpathVariable.IVY_HOME=C\:/Users/Administrator/.ivy2
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.7.0_80/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.7.0_80/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JSR305_ANNOTATIONS=D\:/Documments/fbrp-ide-64bit-v3.0.0.20140321/fbrp-ide/eclipse/foresee/findbugsplugins/eclipse/plugins/edu.umd.cs.findbugs.plugin.eclipse_2.0.0.20111220/lib/jsr305.jar
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=D\:/Documments/fbrp-ide-64bit-v3.0.0.20140321/fbrp-ide/eclipse/plugins/org.junit_4.11.0.v201303080030/
 org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/Administrator/.m2/repository
 org.eclipse.jdt.core.classpathVariable.TOMCAT_HOME=D\:\\Documments\\fbrp-ide-64bit-v3.0.0.20140321\\fbrp-ide\\apache-tomcat-7.0.52
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled

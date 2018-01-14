@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.ppshop.service.ItemService"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.ppshop.mapper.TbItemMapper"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbItemExample"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbContentCategoryExample.Criteria"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbContentExample.Criteria"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbItemCatExample.Criteria"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbItemExample.Criteria"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbItem"/>
+</qualifiedTypeNameHistroy>

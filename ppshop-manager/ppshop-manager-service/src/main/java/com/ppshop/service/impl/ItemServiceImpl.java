@@ -6,10 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.ppshop.common.pojp.EUDataGridResult;
 import com.ppshop.mapper.TbItemMapper;
 import com.ppshop.pojo.TbItem;
-import com.ppshop.pojo.TbItemExample;
-import com.ppshop.pojo.TbItemExample.Criteria;
 import com.ppshop.service.ItemService;
 
 /**
@@ -32,16 +33,22 @@ public class ItemServiceImpl implements ItemService{
 	
 	@Override
 	public TbItem getItemById(long itemId) {
-	    TbItemExample example = new TbItemExample();
-	    //添加查询条件
-	    Criteria criteria = example.createCriteria();
-	    criteria.andIdEqualTo(itemId);
-		List<TbItem> list = itemMapper.selectByExample(example);
-		if (list != null && list.size() > 0){
-			TbItem item = list.get(0);
-			return item;
-		}
-		return null;
+		return itemMapper.getItemById(itemId);
 	}
 
+	@Override
+	public List<TbItem> getItem() {
+		return itemMapper.getItem();
+	}
+	
+	@Override
+	public EUDataGridResult getItemList(int page, int rows) {
+		PageHelper.startPage(page, rows);
+		List<TbItem> list= itemMapper.getItem();
+		EUDataGridResult result = new EUDataGridResult();
+		result.setRows(list);
+		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>();
+		result.setPage(pageInfo.getTotal());
+		return result;
+	}
 }
