@@ -1,6 +1,7 @@
 package com.ppshop.service.impl;
 
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,8 @@ import org.springframework.stereotype.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.common.utils.IDUtils;
 import com.ppshop.mapper.TbItemMapper;
 import com.ppshop.pojo.TbItem;
 import com.ppshop.service.ItemService;
@@ -50,5 +53,17 @@ public class ItemServiceImpl implements ItemService{
 		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>();
 		result.setPage(pageInfo.getTotal());
 		return result;
+	}
+
+	@Override
+	public PpShopResult createItem(TbItem tbItem) {
+		//补全商品信息
+		//生产ID
+		tbItem.setId(IDUtils.genItemId());
+		tbItem.setStatus((byte) 1);
+		tbItem.setCreated(new Date());
+		tbItem.setUpdated(new Date());
+		itemMapper.insertItem(tbItem);
+		return PpShopResult.ok();
 	}
 }

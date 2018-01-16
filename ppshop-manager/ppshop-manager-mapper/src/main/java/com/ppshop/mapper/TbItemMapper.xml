@@ -21,4 +21,9 @@
   <select id="getItemById" parameterType="long" resultMap="BaseResultMap">
          select * from tb_item where id = #{id}
   </select>
+  
+  <insert id="insertItem">
+        insert into 	tb_item (id,title,sell_point,price,num,barcode,image,cid,status,created,updated) values 
+        (#{id},#{title},#{sellPoint},#{price},#{num},#{barcode},#{image},#{cid},#{status},#{created},#{updated});
+  </insert>
 </mapper>

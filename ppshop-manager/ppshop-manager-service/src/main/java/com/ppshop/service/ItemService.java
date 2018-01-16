@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.github.pagehelper.PageInfo;
 import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.PpShopResult;
 import com.ppshop.pojo.TbItem;
 
 public interface ItemService {
@@ -23,4 +24,6 @@ public interface ItemService {
 	 * @return EUDataGridResult（EU页面需要的格式）
 	 */
 	EUDataGridResult getItemList(int page, int rows);
+	
+	PpShopResult createItem(TbItem tbItem);
 }
