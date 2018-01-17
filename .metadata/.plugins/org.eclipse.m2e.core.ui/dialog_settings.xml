@@ -23,6 +23,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\pp\work\ppshop-manager\ppshop-manager-mapper"/>
+			<item value="D:\pp\work\ppshop-parent"/>
 			<item value="D:\pp\work\ppshop-common"/>
 			<item value="D:\pp\work\Servers"/>
 		</list>
@@ -36,13 +38,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="groupId">
-			<item value="com.ppshop"/>
 		</list>
 		<list key="package">
-			<item value="org.ppshop.manager.web"/>
 		</list>
 		<list key="artifactId">
-			<item value="ppshop-manager-web"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -77,10 +76,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ppshop-manager-web"/>
-			<item value="ppshop-manager"/>
-			<item value="ppshop-manager-service"/>
-			<item value="ppshop-manager-mapper"/>
+			<item value="ppshop-rest"/>
+			<item value="ppshop-parent"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -13,6 +13,7 @@
       <artifactId>ppshop-manager-mapper</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
+    <!-- spring -->
     <dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-context</artifactId>
