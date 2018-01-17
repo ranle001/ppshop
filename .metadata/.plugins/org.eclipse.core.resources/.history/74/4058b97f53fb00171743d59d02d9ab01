@@ -1,0 +1,9 @@
+package com.ppshop.service;
+
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.pojo.TbItemParam;
+
+public interface ItemParamItemService {
+	PpShopResult getItemParamById(long cid);
+}

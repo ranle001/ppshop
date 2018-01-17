@@ -1,0 +1,11 @@
+package com.ppshop.service;
+
+import com.ppshop.common.pojp.EUDataGridResult;
+
+public interface ItemParamService {
+	/**
+	 * 商品列表查询
+	 * @return EUDataGridResult（EU页面需要的格式）
+	 */
+	EUDataGridResult getItemList(int page, int rows);
+}

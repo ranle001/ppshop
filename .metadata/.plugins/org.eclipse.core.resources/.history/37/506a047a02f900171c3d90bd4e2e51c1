@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import java.util.List;
+
+import com.ppshop.pojo.TbItem;
+
+
+public interface TbItemMapper {
+	List<TbItem> selectByExample(long itemId);
+}

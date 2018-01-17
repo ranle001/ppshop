@@ -1,0 +1,7 @@
+package com.ppshop.mapper;
+
+
+
+public interface TbItemDescMapper {
+	void insertItemDesc();
+}

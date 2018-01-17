@@ -1,0 +1,14 @@
+package com.ppshop.service;
+
+import java.util.List;
+
+import com.github.pagehelper.PageInfo;
+import com.ppshop.pojo.TbItem;
+
+public interface ItemService {
+	TbItem getItemById(long itemId);
+	
+	List<TbItem> getItem();
+	
+//	List<PageInfo<TbItem>> getItem();
+}

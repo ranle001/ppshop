@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbOrderShipping;
+import com.ppshop.pojo.TbOrderShippingExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TbOrderShippingMapper {
+    
+}

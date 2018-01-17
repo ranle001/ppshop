@@ -1,0 +1,51 @@
+package com.ppshop.service.impl;
+
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.common.utils.IDUtils;
+import com.ppshop.mapper.TbItemDescMapper;
+import com.ppshop.mapper.TbItemMapper;
+import com.ppshop.pojo.TbItem;
+import com.ppshop.pojo.TbItemDesc;
+import com.ppshop.pojo.TbItemParamItem;
+import com.ppshop.service.ItemParamService;
+import com.ppshop.service.ItemService;
+
+/**
+ * 商品规格service
+ * <pre>
+ * 程序的中文名称。
+ * </pre>
+ * @author pangkaiguang
+ * @version 1.00.00
+ * <pre>
+ * 修改记录
+ *    修改后版本:     修改人：  修改日期:     修改内容: 
+ * </pre>
+ */
+@Service
+public class ItemParamServiceImpl implements ItemParamService{
+	
+	@Autowired 
+	private TbItemParamItem tbItemParamItem;
+
+	@Override
+	public EUDataGridResult getItemParamList(int page, int rows) {
+		PageHelper.startPage(page, rows);
+		List<TbItemParam> list= tbItemParamItem.getParamData();
+		EUDataGridResult result = new EUDataGridResult();
+		result.setRows(list);
+		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>();
+		result.setPage(pageInfo.getTotal());
+		return result;
+	}
+}

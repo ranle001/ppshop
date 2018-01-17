@@ -1,0 +1,5 @@
+package com.ppshop.portal.controller;
+
+public class IndexController {
+
+}

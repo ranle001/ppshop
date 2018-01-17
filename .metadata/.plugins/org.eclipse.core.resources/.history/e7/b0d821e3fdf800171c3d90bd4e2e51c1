@@ -1,0 +1,23 @@
+package com.ppshop.controller;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ppshop.mapper.TbItemMapper;
+import com.ppshop.pojo.TbItem;
+import com.ppshop.pojo.TbItemExample;
+
+
+public class TestController {
+	@Test
+	public void testPageHelper(){
+		//创建Spring容器
+		ApplicationContext applicationContext  = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
+		//从spring容器中获得mapper的代理对象
+		TbItemMapper mapper = applicationContext.getBean(TbItemMapper.class);
+		//执行查询
+		TbItemExample example = new TbItemExample;
+		mapper.selectByExample(example);
+	}
+}

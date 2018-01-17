@@ -1,0 +1,6 @@
+package com.ppshop.mapper;
+
+
+public interface TbOrderItemMapper {
+    
+}

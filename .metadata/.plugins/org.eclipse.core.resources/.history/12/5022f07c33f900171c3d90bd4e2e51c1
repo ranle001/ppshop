@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import java.util.List;
+
+import com.ppshop.common.pojp.EUTreeNode;
+
+
+public interface TbItemCatMapper {
+	List<EUTreeNode> getCatList(long parentId);
+}

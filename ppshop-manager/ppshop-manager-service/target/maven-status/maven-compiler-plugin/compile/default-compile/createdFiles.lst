@@ -1,0 +1,10 @@
+com\ppshop\service\impl\ItemCatServiceImpl.class
+com\ppshop\service\impl\ItemParamServiceImpl.class
+com\ppshop\service\ItemCatService.class
+com\ppshop\service\PictureService.class
+com\ppshop\service\impl\PictureServiceImpl.class
+com\ppshop\service\ItemParamService.class
+com\ppshop\service\ItemParamItemService.class
+com\ppshop\service\ItemService.class
+com\ppshop\service\impl\ItemServiceImpl.class
+com\ppshop\service\impl\ItemParamItemServiceImpl.class

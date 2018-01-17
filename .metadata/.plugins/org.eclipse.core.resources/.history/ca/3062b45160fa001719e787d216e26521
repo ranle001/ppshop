@@ -1,0 +1,15 @@
+package com.ppshop.service;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.web.multipart.MultipartFile;
+
+import com.github.pagehelper.PageInfo;
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.EUTreeNode;
+import com.ppshop.pojo.TbItem;
+
+public interface PictureService {
+	Map uploadPicture(MultipartFile )
+}

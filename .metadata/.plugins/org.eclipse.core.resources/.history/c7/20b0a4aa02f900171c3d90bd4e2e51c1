@@ -1,0 +1,9 @@
+package com.ppshop.service;
+
+import java.util.List;
+
+import com.ppshop.pojo.TbItem;
+
+public interface ItemService {
+	List<TbItem> getItemById(long itemId);
+}

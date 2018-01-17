@@ -1,0 +1,16 @@
+package com.ppshop.service;
+
+import java.util.List;
+
+import com.github.pagehelper.PageInfo;
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.EUTreeNode;
+import com.ppshop.pojo.TbItem;
+
+public interface ItemCatService {
+	/**
+	 * 查询全部商品
+	 * @return
+	 */
+	List<EUTreeNode> getCatList();
+}

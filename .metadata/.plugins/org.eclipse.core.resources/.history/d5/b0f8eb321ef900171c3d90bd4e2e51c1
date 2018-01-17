@@ -1,0 +1,10 @@
+package com.ppshop.common.pojp;
+
+import java.util.List;
+
+public class EUDataGridResult {
+	private long toal;
+	private List<?> rows;
+	
+	
+}

@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbItemDesc;
+import com.ppshop.pojo.TbItemDescExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TbItemDescMapper {
+	
+}

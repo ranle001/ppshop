@@ -1,0 +1,10 @@
+package com.ppshop.controller;
+
+import org.junit.Test;
+
+public class FTPTest {
+	@Test
+	public void testFtpClient() throws Exception{
+		
+	}
+}

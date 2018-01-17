@@ -1,0 +1,7 @@
+package com.ppshop.service;
+
+import com.ppshop.common.pojp.PpShopResult;
+
+public interface ItemParamItemService {
+	PpShopResult getItemParamItemById(long id);
+}

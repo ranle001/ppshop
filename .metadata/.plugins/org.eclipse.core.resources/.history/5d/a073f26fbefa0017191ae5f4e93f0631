@@ -1,0 +1,8 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbItem;
+
+
+public interface TbItemDescMapper {
+	void insertItemDesc(String desc);
+}

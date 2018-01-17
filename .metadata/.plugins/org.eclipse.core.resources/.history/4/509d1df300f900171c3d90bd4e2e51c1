@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbContentCategory;
+import com.ppshop.pojo.TbContentCategoryExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TbContentCategoryMapper {
+    
+}

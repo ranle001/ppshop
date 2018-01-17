@@ -1,0 +1,15 @@
+package com.ppshop.service;
+
+import java.util.List;
+
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.pojo.TbItem;
+
+public interface ItemParamService {
+	/**
+	 * 商品列表查询
+	 * @return EUDataGridResult（EU页面需要的格式）
+	 */
+	EUDataGridResult getItemList(int page, int rows);
+}

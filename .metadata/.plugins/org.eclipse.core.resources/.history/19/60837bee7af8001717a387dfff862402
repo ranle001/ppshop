@@ -1,0 +1,5 @@
+package com.ppshop.service;
+
+public interface ItemService {
+	
+}

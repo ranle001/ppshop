@@ -1,0 +1,24 @@
+package com.ppshop.controller;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.commons.net.ftp.FTPClient;
+import org.junit.Test;
+
+public class FTPTest {
+	@Test
+	public void testFtpClient() throws Exception{
+		//创建FTP对象
+		FTPClient ftpClient = new FTPClient();
+		//创建ftp链接，默认是21端口
+		ftpClient.connect("", 21);
+		//登录ftp服务器，使用用户名和密码
+		ftpClient.login("", "");
+		//读取本地文件
+		FileInputStream inputStream = new FileInputStream(new File(""));
+		//上传文件 参数：服务器端文档名，上传文档的inputstreadm
+		ftpClient.storeFile("hello.jpg", local);
+		//关闭
+	}
+}

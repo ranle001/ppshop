@@ -1,0 +1,12 @@
+package com.ppshop.controller;
+
+import org.apache.commons.net.ftp.FTPClient;
+import org.junit.Test;
+
+public class FTPTest {
+	@Test
+	public void testFtpClient() throws Exception{
+		FTPClient ftpClient = new FTPClient();
+		ftpClient.connect("", );
+	}
+}

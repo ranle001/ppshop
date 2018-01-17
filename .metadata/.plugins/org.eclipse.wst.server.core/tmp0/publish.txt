@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Wed Jan 17 13:08:57 CST 2018
+org.eclipse.jst.j2ee.server\:ppshop-common=WEB-INF/lib/ppshop-common-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:ppshop-manager-service=WEB-INF/lib/ppshop-manager-service-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:ppshop-manager-pojo=WEB-INF/lib/ppshop-manager-pojo-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Administrator\\.m2\\repository\\org\\springframework\\spring-web\\4.1.3.RELEASE\\spring-web-4.1.3.RELEASE.jar=WEB-INF/lib/spring-web-4.1.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:ppshop-manager-mapper=WEB-INF/lib/ppshop-manager-mapper-0.0.1-SNAPSHOT.jar

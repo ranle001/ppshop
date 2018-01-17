@@ -1,0 +1,9 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbItem;
+import com.ppshop.pojo.TbItemParam;
+
+
+public interface TbItemParamMapper {
+	TbItemParam getItemParamList();
+}

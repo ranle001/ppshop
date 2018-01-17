@@ -1,0 +1,17 @@
+package com.ppshop.service;
+
+import java.util.List;
+
+import com.github.pagehelper.PageInfo;
+import com.ppshop.common.pojp.EUDataGridResult;
+import com.ppshop.common.pojp.EUTreeNode;
+import com.ppshop.pojo.TbItem;
+
+public interface PictureService {
+	/**
+	 * 商品分类列表
+	 * @param parentId
+	 * @return
+	 */
+	List<EUTreeNode> getCatList(long parentId);
+}

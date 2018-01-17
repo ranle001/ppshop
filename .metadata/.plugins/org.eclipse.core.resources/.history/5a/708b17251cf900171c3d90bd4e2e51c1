@@ -1,0 +1,5 @@
+package com.ppshop.common.pojp;
+
+public class EUDataGridResult {
+	private total
+}

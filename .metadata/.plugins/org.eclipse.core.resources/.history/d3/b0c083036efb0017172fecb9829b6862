@@ -1,0 +1,5 @@
+package com.ppshop.rest.pojo;
+
+public class CatResult {
+
+}

@@ -1,0 +1,10 @@
+package com.ppshop.mapper;
+
+import com.ppshop.pojo.TbUser;
+import com.ppshop.pojo.TbUserExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface TbUserMapper {
+   
+}
