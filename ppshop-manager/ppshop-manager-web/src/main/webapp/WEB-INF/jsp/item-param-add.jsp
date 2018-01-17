@@ -37,18 +37,18 @@
 </div>
 <script style="text/javascript">
 	$(function(){
-		TAOTAO.initItemCat({
+		PPSHOP.initItemCat({//参数是js对象,调用common.js里面的初始化方法,再回调
 			fun:function(node){
 			$(".addGroupTr").hide().find(".param").remove();
 				//  判断选择的目录是否已经添加过规格
 			  $.getJSON("/item/param/query/itemcatid/" + node.id,function(data){
-				  if(data.status == 200 && data.data){
+				  if(data.status == 200 && data.data){//判断是否请求成功和有数据
 					  $.messager.alert("提示", "该类目已经添加，请选择其他类目。", undefined, function(){
 						 $("#itemParamAddTable .selectItemCat").click();
 					  });
 					  return ;
 				  }
-				  $(".addGroupTr").show();
+				  $(".addGroupTr").show();//成功以后显示分组
 			  });
 			}
 		});
@@ -72,9 +72,9 @@
 			$(".panel-tool-close").click();
 		});
 		
-		$("#itemParamAddTable .submit").click(function(){
+		$("#itemParamAddTable .submit").click(function(){//组装json
 			var params = [];
-			var groups = $("#itemParamAddTable [name=group]");
+			var groups = $("#itemParamAddTable [name=group]");//去除gound
 			groups.each(function(i,e){
 				var p = $(e).parentsUntil("ul").parent().find("[name=param]");
 				var _ps = [];

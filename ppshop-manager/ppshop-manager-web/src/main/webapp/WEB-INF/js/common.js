@@ -19,7 +19,7 @@ Date.prototype.format = function(format){
     return format; 
 };
 
-var TT = TAOTAO = {
+var TT = PPSHOP = {
 	// 编辑器参数
 	kingEditorParams : {
 		//指定上传文件参数名称
@@ -111,7 +111,7 @@ var TT = TAOTAO = {
     		}else{
     			_ele.after("<span style='margin-left:10px;'></span>");
     		}
-    		_ele.unbind('click').click(function(){
+    		_ele.unbind('click').click(function(){//点击按钮，打开窗口初始化树形列表
     			$("<div>").css({padding:"5px"}).html("<ul>")
     			.window({
     				width:'500',
@@ -122,16 +122,16 @@ var TT = TAOTAO = {
     			    title:'选择类目',
     			    onOpen : function(){
     			    	var _win = this;
-    			    	$("ul",_win).tree({
+    			    	$("ul",_win).tree({//异步的，每点一次，做一次请求
     			    		url:'/item/cat/list',
     			    		animate:true,
     			    		onClick : function(node){
-    			    			if($(this).tree("isLeaf",node.target)){
+    			    			if($(this).tree("isLeaf",node.target)){//如果是叶子节点
     			    				// 填写到cid中
-    			    				_ele.parent().find("[name=cid]").val(node.id);
+    			    				_ele.parent().find("[name=cid]").val(node.id);//显示选择内容
     			    				_ele.next().text(node.text).attr("cid",node.id);
     			    				$(_win).window('close');
-    			    				if(data && data.fun){
+    			    				if(data && data.fun){//判断传过来的参数是否为空，不为空回调fun方法
     			    					data.fun.call(this,node);
     			    				}
     			    			}

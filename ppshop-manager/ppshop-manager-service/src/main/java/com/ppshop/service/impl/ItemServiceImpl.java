@@ -12,8 +12,10 @@ import com.github.pagehelper.PageInfo;
 import com.ppshop.common.pojp.EUDataGridResult;
 import com.ppshop.common.pojp.PpShopResult;
 import com.ppshop.common.utils.IDUtils;
+import com.ppshop.mapper.TbItemDescMapper;
 import com.ppshop.mapper.TbItemMapper;
 import com.ppshop.pojo.TbItem;
+import com.ppshop.pojo.TbItemDesc;
 import com.ppshop.service.ItemService;
 
 /**
@@ -33,6 +35,9 @@ public class ItemServiceImpl implements ItemService{
 	
 	@Autowired 
 	private TbItemMapper itemMapper;
+	
+	@Autowired 
+	private TbItemDescMapper tbItemDescMapper;
 	
 	@Override
 	public TbItem getItemById(long itemId) {
@@ -56,7 +61,7 @@ public class ItemServiceImpl implements ItemService{
 	}
 
 	@Override
-	public PpShopResult createItem(TbItem tbItem) {
+	public PpShopResult createItem(TbItem tbItem, String desc) throws Exception {
 		//补全商品信息
 		//生产ID
 		tbItem.setId(IDUtils.genItemId());
@@ -64,6 +69,24 @@ public class ItemServiceImpl implements ItemService{
 		tbItem.setCreated(new Date());
 		tbItem.setUpdated(new Date());
 		itemMapper.insertItem(tbItem);
+		PpShopResult result = insertItemDesc(tbItem.getId(), desc);
+		if (result.getStatus() != 200){
+			throw new Exception();
+		}
+		return PpShopResult.ok();
+	}
+	
+	/**
+	 * 添加商品描述
+	 * @param desc
+	 */
+	private PpShopResult insertItemDesc(Long itemId, String desc){
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(itemId);
+		itemDesc.setItemDesc(desc);
+		itemDesc.setCreated(new Date());
+		itemDesc.setUpdated(new Date());
+		tbItemDescMapper.insertItemDesc(itemDesc);
 		return PpShopResult.ok();
 	}
 }
