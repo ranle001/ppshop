@@ -14,8 +14,10 @@ import com.ppshop.common.pojp.PpShopResult;
 import com.ppshop.common.utils.IDUtils;
 import com.ppshop.mapper.TbItemDescMapper;
 import com.ppshop.mapper.TbItemMapper;
+import com.ppshop.mapper.TbItemParamItemMapper;
 import com.ppshop.pojo.TbItem;
 import com.ppshop.pojo.TbItemDesc;
+import com.ppshop.pojo.TbItemParamItem;
 import com.ppshop.service.ItemService;
 
 /**
@@ -39,6 +41,9 @@ public class ItemServiceImpl implements ItemService{
 	@Autowired 
 	private TbItemDescMapper tbItemDescMapper;
 	
+	@Autowired 
+	private TbItemParamItemMapper tbItemParamItemMapper;
+	
 	@Override
 	public TbItem getItemById(long itemId) {
 		return itemMapper.getItemById(itemId);
@@ -61,7 +66,7 @@ public class ItemServiceImpl implements ItemService{
 	}
 
 	@Override
-	public PpShopResult createItem(TbItem tbItem, String desc) throws Exception {
+	public PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception {
 		//补全商品信息
 		//生产ID
 		tbItem.setId(IDUtils.genItemId());
@@ -70,6 +75,10 @@ public class ItemServiceImpl implements ItemService{
 		tbItem.setUpdated(new Date());
 		itemMapper.insertItem(tbItem);
 		PpShopResult result = insertItemDesc(tbItem.getId(), desc);
+		if (result.getStatus() != 200){
+			throw new Exception();
+		}
+	    result = insertItemParam(tbItem.getId(), itemParams);
 		if (result.getStatus() != 200){
 			throw new Exception();
 		}
@@ -87,6 +96,20 @@ public class ItemServiceImpl implements ItemService{
 		itemDesc.setCreated(new Date());
 		itemDesc.setUpdated(new Date());
 		tbItemDescMapper.insertItemDesc(itemDesc);
+		return PpShopResult.ok();
+	}
+	
+	/**
+	 * 添加商品规格
+	 * @param desc
+	 */
+	private PpShopResult insertItemParam(Long itemId, String itemParams){
+		TbItemParamItem tbItemParamItem = new TbItemParamItem();
+		tbItemParamItem.setItemId(itemId);
+		tbItemParamItem.setParamData(itemParams);
+		tbItemParamItem.setCreated(new Date());
+		tbItemParamItem.setUpdated(new Date());
+		tbItemParamItemMapper.insertItemParamItem(tbItemParamItem);
 		return PpShopResult.ok();
 	}
 }

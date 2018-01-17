@@ -24,5 +24,5 @@ public interface ItemService {
 	 */
 	EUDataGridResult getItemList(int page, int rows);
 	
-	PpShopResult createItem(TbItem tbItem, String desc) throws Exception ;
+	PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception ;
 }
