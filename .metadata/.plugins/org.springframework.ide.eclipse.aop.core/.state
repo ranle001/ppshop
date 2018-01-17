@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="ppshop-portal"/>
 <aop-project name="ppshop-manager-service"/>
 <aop-project name="ppshop-rest"/>
 <aop-project name="ppshop-manager-web">

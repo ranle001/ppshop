@@ -23,6 +23,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\pp\work\ppshop-rest"/>
 			<item value="D:\pp\work\ppshop-manager\ppshop-manager-mapper"/>
 			<item value="D:\pp\work\ppshop-parent"/>
 			<item value="D:\pp\work\ppshop-common"/>
@@ -76,8 +77,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ppshop-rest"/>
+			<item value="ppshop-portal"/>
 			<item value="ppshop-parent"/>
+			<item value="ppshop-rest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
