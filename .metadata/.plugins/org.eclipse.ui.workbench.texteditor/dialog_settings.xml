@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
 		<item value="97" key="DIALOG_Y_ORIGIN"/>
-		<item value="400" key="DIALOG_HEIGHT"/>
 		<item value="882" key="DIALOG_X_ORIGIN"/>
+		<item value="400" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="itemParams" key="selection"/>
+		<item value="getDataService" key="selection"/>
 		<list key="findhistory">
+			<item value="getDataService"/>
+			<item value="_blank"/>
+			<item value="过敏"/>
+			<item value="2499低价疯抢！老人！儿童！过敏类人群首选！"/>
+			<item value="http://img13.360buyimg.com"/>
+			<item value="background:url(http://img13.360buyimg.com/da/jfs/t349/295/1695471355/9379/2325a0a1/54407591Nb4735d70.jpg) no-repeat #fff center 0;"/>
+			<item value="大家电"/>
 			<item value="itemParams"/>
-			<item value="itemAddForm"/>
-			<item value="changeItemParam"/>
-			<item value="group"/>
-			<item value="itemParamAddTable"/>
-			<item value="paramData"/>
-			<item value="addParam"/>
-			<item value="itemParamAddTemplate"/>
 		</list>
 		<list key="replacehistory">
 		</list>

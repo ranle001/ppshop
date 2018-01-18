@@ -1,5 +1,7 @@
+com\ppshop\mapper\TbContentCategoryMapper.class
 com\ppshop\mapper\TbItemCatMapper.class
 com\ppshop\mapper\TbItemParamMapper.class
+com\ppshop\mapper\TbContentMapper.class
 com\ppshop\mapper\TbItemMapper.class
 com\ppshop\mapper\TbItemDescMapper.class
 com\ppshop\mapper\TbItemParamItemMapper.class
