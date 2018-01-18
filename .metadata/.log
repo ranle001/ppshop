@@ -4660,3 +4660,1367 @@ Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 13:08:26.318
 !MESSAGE properties loading 'ppshop-rest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:35.345
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 14:52:35.395
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 14:52:35.395
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 14:52:35.396
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 14:52:35.396
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 14:52:35.397
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 14:52:35.397
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 14:52:35.398
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\log4j.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\log4j.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\log4j.properties (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 14:52:35.399
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\log4j.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\log4j.properties (系统找不到指定的文件。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:35.485
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:35.535
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:35.538
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:36.704
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:36.717
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:46.760
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:46.764
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:52.531
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:52:52.534
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:58:13.065
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:58:13.069
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:58:16.099
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 14:58:16.103
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:00:47.385
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:16.284
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:18.936
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:43.113
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:50.337
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:50.340
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:59.038
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:01:59.041
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:04:29.508
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:04:38.881
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:04:38.885
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:26.341
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 15:05:26.343
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 15:05:26.343
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 15:05:26.344
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 15:05:26.345
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 15:05:26.346
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 15:05:26.346
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:26.348
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:26.618
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:26.626
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:27.564
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:05:27.567
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:06:00.058
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:06:01.119
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:06:01.340
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:06:56.096
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:06:56.099
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:07:01.023
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:07:03.561
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:07:24.160
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:08:02.306
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:08:29.083
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:08:35.370
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:08:51.823
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:08:57.180
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:09:02.485
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:09:10.324
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:09:16.434
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:09:22.914
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:09:51.850
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:11:05.255
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:11:19.242
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:11:21.389
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:11:40.417
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:12:01.216
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:12:03.602
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:13:06.613
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:13:17.627
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:13:24.379
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:13:31.243
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:13:33.509
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:04.470
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:04.541
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:05.081
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:05.732
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:06.933
+!MESSAGE properties loading 'ppshop-common'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:08.200
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:08.203
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:08.205
+!MESSAGE properties loading 'ppshop-portal'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:08.206
+!MESSAGE properties loading 'ppshop-rest'
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-18 15:14:08.433
+!MESSAGE JavaBuilder handling CoreException while cleaning: ppshop-manager-mapper
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Could not delete '/ppshop-manager-mapper/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.433
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.433
+!MESSAGE Could not delete '/ppshop-manager-mapper/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.433
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.434
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-18 15:14:08.457
+!MESSAGE JavaBuilder handling CoreException while cleaning: ppshop-manager-pojo
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Could not delete '/ppshop-manager-pojo/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.458
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete '/ppshop-manager-pojo/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.458
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.458
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-18 15:14:08.488
+!MESSAGE JavaBuilder handling CoreException while cleaning: ppshop-manager-service
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Could not delete '/ppshop-manager-service/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.489
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.489
+!MESSAGE Could not delete '/ppshop-manager-service/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.489
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service\pom.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop\ppshop-manager-service.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven\com.ppshop.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF\maven.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.490
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-service\target\classes\META-INF.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-18 15:14:08.531
+!MESSAGE JavaBuilder handling CoreException while cleaning: ppshop-manager-web
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Could not delete '/ppshop-manager-web/target/classes/resource'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\db.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\resource.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.532
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.532
+!MESSAGE Could not delete '/ppshop-manager-web/target/classes/resource'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:291)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:430)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:316)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:137)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:89)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1301)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:313)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\db.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\resource.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-18 15:14:08.532
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.532
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.532
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\db.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.532
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource\resource.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:08.532
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-web\target\classes\resource.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:09.074
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-18 15:14:09.159
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: ppshop-manager-pojo
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Could not delete '/ppshop-manager-pojo/target/classes/META-INF'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-18 15:14:09.159
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-18 15:14:09.159
+!MESSAGE Could not delete '/ppshop-manager-pojo/target/classes/META-INF'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1977)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:114)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:46)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:254)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:173)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+Contains: Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-18 15:14:09.159
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.159
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.159
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.160
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.160
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.160
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-18 15:14:09.160
+!MESSAGE Could not delete: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:09.661
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:10.179
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:10.390
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:13.304
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:13.925
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:14.261
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:15.070
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:15.075
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:16.658
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:16.666
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:16.670
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:16.673
+!MESSAGE properties loading 'ppshop-portal'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-01-18 15:14:16.896
+!MESSAGE The POM for com.alibaba:druid:jar:1.0.9 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:18.249
+!MESSAGE properties loading 'ppshop-rest'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:49.773
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:49.776
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:54.523
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:14:54.526
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:20:28.385
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:20:28.387
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:20:30.109
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:20:30.754
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:20:30.758
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:37.636
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 15:22:37.638
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 15:22:37.638
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-mapper\target\classes\META-INF\maven\com.ppshop\ppshop-manager-mapper\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 4 0 2018-01-18 15:22:37.639
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 14 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-18 15:22:37.639
+!MESSAGE File not found: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties.
+!STACK 0
+java.io.FileNotFoundException: D:\pp\work\ppshop-manager\ppshop-manager-pojo\target\classes\META-INF\maven\com.ppshop\ppshop-manager-pojo\pom.properties (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.util.ProjectProperties.loadProjectProperties(ProjectProperties.java:80)
+	at jp.gr.java_conf.ussiy.app.propedit.eclipse.plugin.startup.Startup$1.resourceChanged(Startup.java:69)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:156)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:37.641
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:37.852
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:37.855
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:38.814
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:38.818
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:48.618
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:48.621
+!MESSAGE properties loading 'ppshop-manager-web'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:22:56.247
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:23:37.299
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:23:42.997
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:23:53.229
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:24:00.364
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:24:49.685
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:24:53.363
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:25:01.348
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:25:07.260
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:25:09.875
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:25:12.013
+!MESSAGE properties loading 'ppshop-manager'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2018-01-18 15:25:28.156
+!MESSAGE properties loading 'ppshop-manager'
