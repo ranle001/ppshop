@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
-<fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
-<fullyQualifiedTypeName name="com.ppshop.mapper.TbItemMapper"/>
 <fullyQualifiedTypeName name="com.ppshop.service.ItemCatService"/>
-<fullyQualifiedTypeName name="com.ppshop.common.pojp.EUTreeNode"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.apache.commons.net.ftp.FTPClient"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
@@ -28,15 +23,12 @@
 <fullyQualifiedTypeName name="com.ppshop.common.pojp.EUDataGridResult"/>
 <fullyQualifiedTypeName name="com.ppshop.mapper.TbItemParamMapper"/>
 <fullyQualifiedTypeName name="com.ppshop.service.ItemParamService"/>
-<fullyQualifiedTypeName name="com.ppshop.common.pojp.PpShopResult"/>
 <fullyQualifiedTypeName name="com.ppshop.pojo.TbItemParam"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.ppshop.mapper.TbItemParamItemMapper"/>
 <fullyQualifiedTypeName name="com.ppshop.pojo.TbItemParamItem"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.ppshop.service.ItemParamItemService"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="javax.xml.ws.Service.Mode"/>
 <fullyQualifiedTypeName name="javax.jws.WebParam.Mode"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
@@ -46,13 +38,7 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
 <fullyQualifiedTypeName name="com.ppshop.mapper.TbItemCatMapper"/>
 <fullyQualifiedTypeName name="com.ppshop.pojo.TbItemCat"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.ppshop.rest.pojo.CatNode"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.ppshop.rest.service.ItemCatService"/>
 <fullyQualifiedTypeName name="com.ppshop.rest.pojo.CatResult"/>
 <fullyQualifiedTypeName name="com.ppshop.common.utils.JsonUtils"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.springframework.http.converter.json.MappingJacksonValue"/>
+<fullyQualifiedTypeName name="com.ppshop.common.pojp.EUTreeNode"/>
+<fullyQualifiedTypeName name="com.ppshop.mapper.TbContentCategoryMapper"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.ppshop.service.ContentCategoryService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ppshop.common.pojp.PpShopResult"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.ppshop.pojo.TbContentCategory"/>
 </qualifiedTypeNameHistroy>

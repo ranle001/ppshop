@@ -1,5 +1,6 @@
 com\ppshop\controller\PageController.class
 com\ppshop\controller\ItemParamItemController.class
+com\ppshop\controller\ContentController.class
 com\ppshop\controller\ItemController.class
 com\ppshop\controller\PictureController.class
 com\ppshop\controller\ContentCategoryController.class

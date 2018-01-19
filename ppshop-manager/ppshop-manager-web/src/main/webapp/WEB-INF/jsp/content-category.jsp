@@ -38,7 +38,11 @@ $(function(){
         			}
         		});
         	}else{
-        		$.post("/content/category/update",{id:node.id,name:node.text});
+        		$.post("/content/category/update",{id:node.id,name:node.text}, function(data){
+        			if(data.status == 200){
+        				$.messager.alert('提示','修改商品成功!');
+        			}
+        		});
         	}
         }
 	});
@@ -62,8 +66,11 @@ function menuHandler(item){
 	}else if(item.name === "delete"){
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){
-				$.post("/content/category/delete/",{parentId:node.parentId,id:node.id},function(){
+				$.post("/content/category/delete/",{parentId:node.parentId,id:node.id},function(data){
 					tree.tree("remove",node.target);
+					if(data.status == 200){
+        				$.messager.alert('提示','删除商品成功!');
+        			}
 				});	
 			}
 		});

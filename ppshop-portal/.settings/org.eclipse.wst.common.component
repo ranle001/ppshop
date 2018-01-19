@@ -7,6 +7,9 @@
         <dependent-module archiveName="ppshop-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ppshop-common/ppshop-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="ppshop-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ppshop-manager-pojo/ppshop-manager-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="ppshop-portal"/>
         <property name="java-output-path" value="/ppshop-portal/target/classes"/>
     </wb-module>
