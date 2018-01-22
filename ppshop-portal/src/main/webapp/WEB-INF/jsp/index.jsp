@@ -65,6 +65,7 @@
 </div>
 </div><!--mscroll end-->
 <script type="text/javascript">
+<!--小广告-->
 pageConfig.DATA_MScroll =[
     {
         "alt": "",
@@ -210,14 +211,17 @@ pageConfig.DATA_MScroll =[
 <div id="jdnews" class="m m1" >
 <div class="mt">
 <h2>淘淘快报</h2>
+<script>
+
+</script>
 <div class="extra" clstag="homepage|keycount|home2013|11a"><a href="http://www.jd.com/moreSubject.aspx" target="_blank">更多快报&nbsp;&gt;</a></div>
 </div>
 <div class="mc">
 	<ul>
-		<li class="odd" clstag="homepage|keycount|home2013|11b1"><a href="http://club.jr.jd.com/girls/jingxuan" target="_blank" title="38女人节得3800理财金">38女人节得3800理财金</a></li>					
-				<li clstag="homepage|keycount|home2013|11b1"><a href="http://sale.jd.com/act/U0jwsxIFrmO.html" target="_blank" title="开学季音像299减99">开学季音像299减99</a></li>
-				<li class="odd" clstag="homepage|keycount|home2013|11b1"><a href="http://sale.jd.com/act/Kz4QnjJMuL.html" target="_blank" title="情定金生相约钻石婚">情定金生相约钻石婚</a></li>					
-				<li clstag="homepage|keycount|home2013|11b1"><a href="http://sale.jd.com/act/Z5o4RNyF2Uv.html" target="_blank" title="爆款造型品 扮靓美人计">爆款造型品 扮靓美人计</a></li>
+		<li><a href="http://club.jr.jd.com/girls/jingxuan" target="_blank" title="38女人节得3800理财金">38女人节得3800理财金</a></li>					
+		<li><a href="http://sale.jd.com/act/U0jwsxIFrmO.html" target="_blank" title="开学季音像299减99">开学季音像299减99</a></li>
+		<li><a href="http://sale.jd.com/act/Kz4QnjJMuL.html" target="_blank" title="情定金生相约钻石婚">情定金生相约钻石婚</a></li>					
+		<li><a href="http://sale.jd.com/act/Z5o4RNyF2Uv.html" target="_blank" title="爆款造型品 扮靓美人计">爆款造型品 扮靓美人计</a></li>
 	</ul>
 </div>
 </div>
@@ -313,21 +317,24 @@ pageConfig.DATA_MScroll =[
   <div class="smc" data-widget="tab-content">
     <div class="loading-style1"><b></b>加载中，请稍候...</div>
   </div>
-</div><div class="sm sm2 fore3"  data-widget="tab-item" data-tag="1623" clstag="homepage|keycount|home2013|18e">
+</div>
+<div class="sm sm2 fore3"  data-widget="tab-item" data-tag="1623" clstag="homepage|keycount|home2013|18e">
   <div class="smt">
     <h3>小家电</h3>
   </div>
   <div class="smc" data-widget="tab-content">
     <div class="loading-style1"><b></b>加载中，请稍候...</div>
   </div>
-</div><div class="sm sm2 fore4"  data-widget="tab-item" data-tag="1624" clstag="homepage|keycount|home2013|18f">
+</div>
+<div class="sm sm2 fore4"  data-widget="tab-item" data-tag="1624" clstag="homepage|keycount|home2013|18f">
   <div class="smt">
     <h3>手机通讯</h3>
   </div>
   <div class="smc" data-widget="tab-content">
     <div class="loading-style1"><b></b>加载中，请稍候...</div>
   </div>
-</div><div class="sm sm2 fore5"  data-widget="tab-item" data-tag="1625" clstag="homepage|keycount|home2013|18g">
+</div>
+<div class="sm sm2 fore5"  data-widget="tab-item" data-tag="1625" clstag="homepage|keycount|home2013|18g">
   <div class="smt">
     <h3>汽车五金</h3>
   </div>

@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ppshop.common.pojp.EUDataGridResult;
-import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.common.pojo.EUDataGridResult;
+import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.pojo.TbItemParam;
 import com.ppshop.service.ItemParamService;
 

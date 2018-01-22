@@ -2,7 +2,7 @@ package com.ppshop.service;
 
 import java.util.List;
 
-import com.ppshop.common.pojp.EUTreeNode;
+import com.ppshop.common.pojo.EUTreeNode;
 
 public interface ItemCatService {
 	/**

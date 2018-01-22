@@ -2,8 +2,8 @@ package com.ppshop.service;
 
 import java.util.List;
 
-import com.ppshop.common.pojp.EUDataGridResult;
-import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.common.pojo.EUDataGridResult;
+import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.pojo.TbItem;
 
 public interface ItemService {

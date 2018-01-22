@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.ppshop.common.pojp.EUDataGridResult;
-import com.ppshop.common.pojp.PpShopResult;
+import com.ppshop.common.pojo.EUDataGridResult;
+import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.IDUtils;
 import com.ppshop.mapper.TbItemDescMapper;
 import com.ppshop.mapper.TbItemMapper;

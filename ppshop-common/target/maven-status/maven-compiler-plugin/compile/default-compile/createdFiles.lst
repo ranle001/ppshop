@@ -1,7 +1,3 @@
-com\ppshop\common\pojp\PpShopResult.class
 com\ppshop\common\utils\FtpUtil.class
-com\ppshop\common\utils\ExceptionUtil.class
-com\ppshop\common\pojp\EUTreeNode.class
 com\ppshop\common\utils\IDUtils.class
 com\ppshop\common\utils\JsonUtils.class
-com\ppshop\common\pojp\EUDataGridResult.class

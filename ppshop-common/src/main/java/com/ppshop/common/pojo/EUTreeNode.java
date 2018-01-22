@@ -1,4 +1,4 @@
-package com.ppshop.common.pojp;
+package com.ppshop.common.pojo;
 
 
 /**

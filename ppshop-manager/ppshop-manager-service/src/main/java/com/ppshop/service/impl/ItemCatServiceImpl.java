@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ppshop.common.pojp.EUTreeNode;
+import com.ppshop.common.pojo.EUTreeNode;
 import com.ppshop.mapper.TbItemCatMapper;
 import com.ppshop.pojo.TbItemCat;
 import com.ppshop.service.ItemCatService;
