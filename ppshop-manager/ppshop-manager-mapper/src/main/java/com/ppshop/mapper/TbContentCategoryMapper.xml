@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ppshop.mapper.TbContentCategoryMapper" >
+  <resultMap id="BaseResultMap" type="com.ppshop.pojo.TbContentCategory" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="parent_id" property="parentId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="sort_order" property="sortOrder" jdbcType="INTEGER" />
+    <result column="is_parent" property="isParent" jdbcType="BIT" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <select id="getCategoryByParentId" parameterType="long" resultMap="BaseResultMap">
+         select * from tb_content_category where parent_id = #{parentId}
+  </select>
+  
+   <select id="getCategoryById" parameterType="long" resultMap="BaseResultMap">
+         select * from tb_content_category where id = #{id}
+  </select>
+  
+  <insert id="insertContentCategory">
+        <selectKey keyProperty="id" resultType="long" order="AFTER">
+                SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into tb_content_category (id,parent_id,name,status,sort_order,is_parent,created,updated) values 
+        (#{id},#{parentId},#{name},#{status},#{sortOrder},#{isParent},#{created},#{updated})
+  </insert>
+  
+  <update id="updateContentCategoryById">
+        <![CDATA[
+			update tb_content_category 
+		]]>
+		<include refid="content_updateSet"/>
+		<include refid="content_condition" />
+  </update>
+  
+  <sql id="content_updateSet">
+	<set>
+		<if test="isParent!=null">is_parent=#{isParent}</if>
+		<if test="name!=null">,name=#{name}</if>
+	</set>
+  </sql>
+  
+  <sql id="content_condition">
+	<where>
+	    1 = 1
+		<if test="id!=null"> AND id=#{id}</if>
+	</where>
+  </sql>
+  
+  
+  <delete id="removeContentCategory">
+       delete from tb_content_category WHERE id = #{id}
+  </delete>
+</mapper>
