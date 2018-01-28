@@ -8,7 +8,7 @@ import com.ppshop.rest.service.JedisClient;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-@Service("jedisClientSingle")
+@Service
 public class JedisClientSingle implements JedisClient {
 	@Autowired
 	private JedisPool JedisPool;

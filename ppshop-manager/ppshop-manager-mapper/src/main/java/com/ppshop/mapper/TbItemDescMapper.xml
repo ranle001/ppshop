@@ -12,4 +12,8 @@
       insert into tb_item_desc (item_id,item_desc,created,updated) values (#{itemId},#{itemDesc},#{created},#{updated});
   </insert>
   
+  <select id="quertyItemDescByItemId" resultMap="BaseResultMap">
+      select * from tb_item_desc where item_id = #{itemId}
+  </select>
+  
 </mapper>

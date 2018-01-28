@@ -22,6 +22,7 @@
 		a.title,
 		a.sell_point,
 		a.image,
+		a.price,
 		b.NAME AS category_name,
 		c.item_desc 
 		FROM tb_item a 
