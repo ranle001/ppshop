@@ -82,6 +82,7 @@ public class FtpUtil {
 			if (ftp.isConnected()) {
 				try {
 					ftp.disconnect();
+					input.close();
 				} catch (IOException ioe) {
 				}
 			}
@@ -109,6 +110,7 @@ public class FtpUtil {
 			ftp.connect(host, port);
 			// 如果采用默认端口，可以使用ftp.connect(host)的方式直接连接FTP服务器
 			ftp.login(username, password);// 登录
+			ftp.enterLocalPassiveMode();
 			reply = ftp.getReplyCode();
 			if (!FTPReply.isPositiveCompletion(reply)) {
 				ftp.disconnect();
@@ -143,8 +145,8 @@ public class FtpUtil {
 	
 	public static void main(String[] args) {
 		try {  
-	        FileInputStream in=new FileInputStream(new File("D:\\temp\\image\\gaigeming.jpg"));  
-	        boolean flag = uploadFile("192.168.25.133", 21, "ftpuser", "ftpuser", "/home/ftpuser/www/images","/2015/01/21", "gaigeming.jpg", in);  
+	        FileInputStream in=new FileInputStream(new File("D:\\1.jpg"));  
+	        boolean flag = uploadFile("192.168.132.129", 21, "ftpuser", "123456", "/home/ftpuser/img","/2018/01/28", "11.jpg", in);  
 	        System.out.println(flag);  
 	    } catch (FileNotFoundException e) {  
 	        e.printStackTrace();  

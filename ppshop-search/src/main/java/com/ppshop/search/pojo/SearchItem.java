@@ -1,9 +1,9 @@
 package com.ppshop.search.pojo;
 
-public class Item {
+public class SearchItem {
 	
 	private Long id;
-	private String tiele;
+	private String title;
 	private String sell_point;
 	private Long price;
 	private String image;
@@ -15,11 +15,11 @@ public class Item {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getTiele() {
-		return tiele;
+	public String getTitle() {
+		return title;
 	}
-	public void setTiele(String tiele) {
-		this.tiele = tiele;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getSell_point() {
 		return sell_point;

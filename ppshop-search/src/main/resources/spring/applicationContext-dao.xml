@@ -28,6 +28,6 @@
 		<property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.ppshop.mapper,com.ppshop.search.mapper" />
+		<property name="basePackage" value="com.ppshop.mapper,com.ppshop.search.mapper"/>
 	</bean>
 </beans>
