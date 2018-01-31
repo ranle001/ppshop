@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.JsonUtils;
 import com.ppshop.mapper.TbItemDescMapper;
@@ -48,6 +49,7 @@ public class ItemServiceImpl implements ItemService{
 		try {
 			String str = jedisClientSingle.get(REDIS_ITEM_KEY + ":" + itemId + ":base");
 			if (StringUtils.isNotBlank(str)){
+//				String strs=str.replace("\"","\\\"");
 				TbItem item = JsonUtils.jsonToPojo(str, TbItem.class);
 				return PpShopResult.ok(item); 
 			}

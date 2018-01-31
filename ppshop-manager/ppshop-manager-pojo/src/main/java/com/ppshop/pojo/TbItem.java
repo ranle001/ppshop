@@ -1,6 +1,5 @@
 package com.ppshop.pojo;
 
-import java.io.Serializable;
 import java.util.Date;
 
 public class TbItem{
@@ -26,7 +25,7 @@ public class TbItem{
 
     private Date updated;
     
-    private String[] images;
+//    private String[] images;
 
     public Long getId() {
         return id;
@@ -114,17 +113,5 @@ public class TbItem{
 
     public void setUpdated(Date updated) {
         this.updated = updated;
-    }
-
-    public String[] getImages(){
-		if (image != null){
-			String[] strs = image.split(",");
-			return strs;
-		}
-		return null;
-	}
-
-	public void setImages(String[] images) {
-		this.images = images;
-	}   
+    } 
 }
