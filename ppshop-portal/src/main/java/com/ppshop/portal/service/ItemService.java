@@ -1,7 +1,7 @@
 package com.ppshop.portal.service;
 
-import com.ppshop.pojo.TbItem;
+import com.ppshop.portal.pojo.SearchItemInfo;
 
 public interface ItemService {
-	TbItem getItemById(long itemId);
+	SearchItemInfo getItemById(long itemId);
 }

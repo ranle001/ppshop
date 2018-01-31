@@ -41,7 +41,7 @@ public class ItemServiceImpl implements ItemService{
 	
 	@Autowired
 	private JedisClient jedisClientSingle;
-
+	
 	@Override
 	public PpShopResult getItemBaseInfo(long itemId) {
 		//先查缓存

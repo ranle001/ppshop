@@ -5,9 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ppshop.pojo.TbItem;
+import com.ppshop.portal.pojo.SearchItemInfo;
 import com.ppshop.portal.service.ItemService;
 
 
@@ -20,7 +19,7 @@ public class ItemController {
 	
 	@RequestMapping("/item/{itemId}")
 	public String showItem(@PathVariable Long itemId, Model model){
-		TbItem tbItem = itemService.getItemById(itemId);
+		SearchItemInfo tbItem = itemService.getItemById(itemId);
 		model.addAttribute("item", tbItem);
 		return "item";
 	}

@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.HttpClientUtil;
-import com.ppshop.pojo.TbItem;
-import com.ppshop.portal.pojo.SearchItem;
+import com.ppshop.portal.pojo.SearchItemInfo;
 import com.ppshop.portal.service.ItemService;
 
 /**
@@ -31,14 +30,14 @@ public class ItemServiceImpl implements ItemService{
 	private String ITEM_PARAM_URL;
 	
 	@Override
-	public TbItem getItemById(long itemId) {
+	public SearchItemInfo getItemById(long itemId) {
 		try {
 			//调用rest服务查询商品信息	
 			String json = HttpClientUtil.doGet(REST_BASE_URL+ITEM_INFO_URL+itemId);
 			if (StringUtils.isNoneBlank(json)) {
-				PpShopResult result = PpShopResult.formatToPojo(json, TbItem.class);
+				PpShopResult result = PpShopResult.formatToPojo(json, SearchItemInfo.class);
 				if (result.getStatus() == 200){
-					TbItem tbItem = (TbItem) result.getData();
+					SearchItemInfo tbItem = (SearchItemInfo) result.getData();
 					return tbItem;
 				}
 			}
