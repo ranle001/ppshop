@@ -5,4 +5,5 @@ import com.ppshop.common.pojo.PpShopResult;
 public interface SearchItemService {
 	PpShopResult getItemList();
 	PpShopResult getItemListById(Long id);
+	PpShopResult deleteItemById(Long id);
 }

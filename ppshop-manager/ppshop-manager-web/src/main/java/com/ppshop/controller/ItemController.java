@@ -113,10 +113,7 @@ public class ItemController {
 	@RequestMapping("/delete")
 	@ResponseBody
 	public PpShopResult deletItem(@RequestBody String params){
-		String[] itemIds = params.split(",");
-		for (String str : itemIds){
-		
-		}
-		return PpShopResult.ok();	
+		PpShopResult ppShopResult = itemService.deleteItem(params);
+		return ppShopResult;	
 	}
 }

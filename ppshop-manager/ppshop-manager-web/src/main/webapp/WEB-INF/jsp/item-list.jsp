@@ -124,10 +124,14 @@
         	        		url : "/item/delete",
         	        		dataType:"json",      
         	                contentType:"application/json",
-        	        		data:JSON.stringify(params),
+        	        		data:params,
         	        		success:function(data){
         	        			if(data.status == 200){
                     				$.messager.alert('提示','删除商品成功!',undefined,function(){
+                    					$("#itemList").datagrid("reload");
+                    				});
+                    			} else {
+                    				$.messager.alert('提示','删除商品失败!',undefined,function(){
                     					$("#itemList").datagrid("reload");
                     				});
                     			}

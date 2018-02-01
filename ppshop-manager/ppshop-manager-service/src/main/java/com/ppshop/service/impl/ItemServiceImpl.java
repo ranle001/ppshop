@@ -4,6 +4,8 @@ package com.ppshop.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.ppshop.common.pojo.EUDataGridResult;
 import com.ppshop.common.pojo.PpShopResult;
+import com.ppshop.common.utils.ExceptionUtil;
 import com.ppshop.common.utils.IDUtils;
 import com.ppshop.mapper.TbItemDescMapper;
 import com.ppshop.mapper.TbItemMapper;
@@ -45,8 +48,8 @@ public class ItemServiceImpl implements ItemService{
 	private TbItemParamItemMapper tbItemParamItemMapper;
 	
 	@Override
-	public TbItem getItemById(long itemId) {
-		return itemMapper.getItemById(itemId);
+	public TbItem getItemById(long id) {
+		return itemMapper.getItemById(id);
 	}
 
 	@Override
@@ -110,6 +113,27 @@ public class ItemServiceImpl implements ItemService{
 		tbItemParamItem.setCreated(new Date());
 		tbItemParamItem.setUpdated(new Date());
 		tbItemParamItemMapper.insertItemParamItem(tbItemParamItem);
+		return PpShopResult.ok();
+	}
+
+	@Override
+	public PpShopResult deleteItem(String params) {
+		try {
+			String[] itemIds = params.split(",");
+			for (String str : itemIds){
+				//删除商品规格信息
+				tbItemParamItemMapper.deleteItemParam(Long.parseLong(str));
+				//删除商品描述信息
+				tbItemDescMapper.deleteItemDesc(Long.parseLong(str));
+				//删除商品
+				itemMapper.deleteItem(Long.parseLong(str));
+				//调用添加商品到solr方法
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return PpShopResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
 		return PpShopResult.ok();
 	}
 }

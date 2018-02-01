@@ -12,7 +12,7 @@ public interface ItemService {
 	 * @param itemId
 	 * @return
 	 */
-	TbItem getItemById(long itemId);
+	TbItem getItemById(long id);
 	/**
 	 * 查询全部商品
 	 * @return
@@ -25,4 +25,6 @@ public interface ItemService {
 	EUDataGridResult getItemList(int page, int rows);
 	
 	PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception ;
+	
+	PpShopResult deleteItem(String params);
 }

@@ -26,4 +26,8 @@
         insert into tb_item (id,title,sell_point,price,num,barcode,image,cid,status,created,updated) values 
         (#{id},#{title},#{sellPoint},#{price},#{num},#{barcode},#{image},#{cid},#{status},#{created},#{updated});
   </insert>
+  
+  <delete id="deleteItem">
+        delete from tb_item where id = #{id} 
+  </delete>
 </mapper>

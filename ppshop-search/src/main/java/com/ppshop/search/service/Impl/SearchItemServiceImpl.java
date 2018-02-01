@@ -75,4 +75,16 @@ public class SearchItemServiceImpl implements SearchItemService{
 		return PpShopResult.ok();
 	}
 
+	@Override
+	public PpShopResult deleteItemById(Long id) {
+		try {
+			solrServer.deleteById(String.valueOf(id));
+			solrServer.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return PpShopResult.build(500,ExceptionUtil.getStackTrace(e));
+		}
+		return PpShopResult.ok();
+	}
+
 }

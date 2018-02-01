@@ -6,7 +6,8 @@ import com.ppshop.pojo.TbItem;
 
 
 public interface TbItemMapper {
-	TbItem getItemById(long itemId);
+	TbItem getItemById(long id);
 	List<TbItem> getItem();
 	void insertItem(TbItem tbItem);
+	void deleteItem(long id);
 }

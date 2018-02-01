@@ -24,7 +24,7 @@ public class SearchItemController {
 	private SearchItemService searchItemService;
 	
 	/**
-	 * 导入全部商品书籍到索引库
+	 * 导入商品到索引库
 	 */
 	@RequestMapping("/importall")
 	@ResponseBody
@@ -34,12 +34,22 @@ public class SearchItemController {
 	}
 	
 	/**
-	 * 导入耽搁商品书籍到索引库
+	 * 导入商品到索引库
 	 */
 	@RequestMapping("/import")
 	@ResponseBody
-	public PpShopResult inportAllItems(@RequestParam Long id){
+	public PpShopResult inportItem(@RequestParam Long id){
 		PpShopResult result = searchItemService.getItemListById(id); 
+		return result;
+	}
+	
+	/**
+	 * 删除商品到索引库
+	 */
+	@RequestMapping("/delete")
+	@ResponseBody
+	public PpShopResult deleteItem(@RequestParam Long id){
+		PpShopResult result = searchItemService.deleteItemById(id); 
 		return result;
 	}
 	
