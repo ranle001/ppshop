@@ -57,7 +57,7 @@ public class ContentServiceImpl implements ContentService{
 		EUDataGridResult euDataGridResult = new EUDataGridResult();
 		euDataGridResult.setRows(tList);
 		PageInfo<TbItemParam> pageInfo = new PageInfo<TbItemParam>();
-		euDataGridResult.setPage(pageInfo.getTotal());
+		euDataGridResult.setTotal(pageInfo.getTotal());
 		return euDataGridResult;
 	}
 

@@ -57,4 +57,9 @@ public class ItemParamItemServiceImpl implements ItemParamItemService{
 		return sb.toString();
 	}
 
+	@Override
+	public TbItemParamItem getItemParamItem(long itemId) {
+		return tbItemParamItemMapper.getItemParamItemByCid(itemId);
+	}
+
 }

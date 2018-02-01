@@ -1,6 +1,8 @@
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemDescServiceImpl.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemCatServiceImpl.java
-D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemParamItemServiceImpl.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ItemDescService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ContentServiceImpl.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemParamItemServiceImpl.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ContentService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ContentCategoryServiceImpl.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\PictureServiceImpl.java
@@ -8,7 +10,7 @@ D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppsh
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemServiceImpl.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\PictureService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ItemParamService.java
-D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ContentCategoryService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ItemCatService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\impl\ItemParamServiceImpl.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ContentCategoryService.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-service\src\main\java\com\ppshop\service\ItemService.java

@@ -1,9 +1,11 @@
 com\ppshop\service\impl\ContentCategoryServiceImpl.class
 com\ppshop\service\impl\ItemCatServiceImpl.class
 com\ppshop\service\ItemCatService.class
+com\ppshop\service\impl\ItemDescServiceImpl.class
 com\ppshop\service\impl\PictureServiceImpl.class
-com\ppshop\service\ItemParamItemService.class
 com\ppshop\service\ItemParamService.class
+com\ppshop\service\ItemParamItemService.class
+com\ppshop\service\ItemDescService.class
 com\ppshop\service\ContentService.class
 com\ppshop\service\impl\ItemParamServiceImpl.class
 com\ppshop\service\PictureService.class

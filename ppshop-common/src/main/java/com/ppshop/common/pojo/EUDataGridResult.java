@@ -16,13 +16,14 @@ import java.util.List;
  * </pre>
  */
 public class EUDataGridResult {
-	private long page;
+	private long total;
 	private List<?> rows;
-	public long getPage() {
-		return page;
+	
+	public long getTotal() {
+		return total;
 	}
-	public void setPage(long page) {
-		this.page = page;
+	public void setTotal(long total) {
+		this.total = total;
 	}
 	public List<?> getRows() {
 		return rows;

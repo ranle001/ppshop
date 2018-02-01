@@ -40,7 +40,7 @@ public class ItemParamServiceImpl implements ItemParamService{
 		EUDataGridResult result = new EUDataGridResult();
 		result.setRows(list);
 		PageInfo<TbItemParam> pageInfo = new PageInfo<TbItemParam>();
-		result.setPage(pageInfo.getTotal());
+		result.setTotal(pageInfo.getTotal());
 		return result;
 	}
 

@@ -60,8 +60,8 @@ public class ItemServiceImpl implements ItemService{
 		List<TbItem> list= itemMapper.getItem();
 		EUDataGridResult result = new EUDataGridResult();
 		result.setRows(list);
-		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>();
-		result.setPage(pageInfo.getTotal());
+		PageInfo pageInfo = new PageInfo<>(list);
+		result.setTotal(pageInfo.getTotal());
 		return result;
 	}
 
