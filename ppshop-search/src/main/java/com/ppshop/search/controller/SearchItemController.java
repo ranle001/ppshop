@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ppshop.common.pojo.PpShopResult;
@@ -36,9 +35,9 @@ public class SearchItemController {
 	/**
 	 * 导入商品到索引库
 	 */
-	@RequestMapping("/import")
+	@RequestMapping("/import/{id}")
 	@ResponseBody
-	public PpShopResult inportItem(@RequestParam Long id){
+	public PpShopResult inportItem(@PathVariable Long id){
 		PpShopResult result = searchItemService.getItemListById(id); 
 		return result;
 	}
@@ -46,9 +45,9 @@ public class SearchItemController {
 	/**
 	 * 删除商品到索引库
 	 */
-	@RequestMapping("/delete")
+	@RequestMapping("/delete/{id}")
 	@ResponseBody
-	public PpShopResult deleteItem(@RequestParam Long id){
+	public PpShopResult deleteItem(@PathVariable Long id){
 		PpShopResult result = searchItemService.deleteItemById(id); 
 		return result;
 	}

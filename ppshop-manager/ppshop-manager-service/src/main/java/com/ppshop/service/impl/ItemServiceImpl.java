@@ -4,9 +4,8 @@ package com.ppshop.service.impl;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.solr.client.solrj.SolrServer;
-import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -14,6 +13,7 @@ import com.github.pagehelper.PageInfo;
 import com.ppshop.common.pojo.EUDataGridResult;
 import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.ExceptionUtil;
+import com.ppshop.common.utils.HttpClientUtil;
 import com.ppshop.common.utils.IDUtils;
 import com.ppshop.mapper.TbItemDescMapper;
 import com.ppshop.mapper.TbItemMapper;
@@ -47,6 +47,15 @@ public class ItemServiceImpl implements ItemService{
 	@Autowired 
 	private TbItemParamItemMapper tbItemParamItemMapper;
 	
+	@Value("${SEARCH_BASE_URL}")
+	private String SEARCH_BASE_URL;
+	
+	@Value("${ITEM_INFO_DELETE}")
+	private String ITEM_INFO_DELETE;
+	
+	@Value("${ITEM_INFO_IMPORT}")
+	private String ITEM_INFO_IMPORT;
+	
 	@Override
 	public TbItem getItemById(long id) {
 		return itemMapper.getItemById(id);
@@ -63,7 +72,7 @@ public class ItemServiceImpl implements ItemService{
 		List<TbItem> list= itemMapper.getItem();
 		EUDataGridResult result = new EUDataGridResult();
 		result.setRows(list);
-		PageInfo pageInfo = new PageInfo<>(list);
+		PageInfo<TbItem> pageInfo = new PageInfo<TbItem>(list);
 		result.setTotal(pageInfo.getTotal());
 		return result;
 	}
@@ -135,5 +144,25 @@ public class ItemServiceImpl implements ItemService{
 			return PpShopResult.build(500, ExceptionUtil.getStackTrace(e));
 		}
 		return PpShopResult.ok();
+	}
+
+	@Override
+	public void saveSearchItem(long itemId) {
+		try {
+			String json = HttpClientUtil.doGet(SEARCH_BASE_URL+ITEM_INFO_IMPORT+itemId);
+			System.out.println(json);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void deleteSearchItem(long itemId) {
+		try {
+			String json = HttpClientUtil.doGet(SEARCH_BASE_URL+ITEM_INFO_DELETE+itemId);
+			System.out.println(json);
+		} catch (Exception e) {
+			e.printStackTrace();			
+		}
 	}
 }

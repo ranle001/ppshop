@@ -12,8 +12,18 @@ public class TbItemParam {
     private Date updated;
 
     private String paramData;
+    
+    private String itemCatName;
+    
+	public String getItemCatName() {
+		return itemCatName;
+	}
 
-    public Long getId() {
+	public void setItemCatName(String itemCatName) {
+		this.itemCatName = itemCatName;
+	}
+
+	public Long getId() {
         return id;
     }
 

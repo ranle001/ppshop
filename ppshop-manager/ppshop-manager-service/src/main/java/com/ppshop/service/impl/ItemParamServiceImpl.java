@@ -39,7 +39,7 @@ public class ItemParamServiceImpl implements ItemParamService{
 		List<TbItemParam> list= tbItemParamMapper.getItemParamList();
 		EUDataGridResult result = new EUDataGridResult();
 		result.setRows(list);
-		PageInfo<TbItemParam> pageInfo = new PageInfo<TbItemParam>();
+		PageInfo<TbItemParam> pageInfo = new PageInfo<TbItemParam>(list);
 		result.setTotal(pageInfo.getTotal());
 		return result;
 	}

@@ -1,19 +1,13 @@
 package com.ppshop.portal.service.Impl;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.HttpClientUtil;
-import com.ppshop.common.utils.JsonUtils;
-import com.ppshop.portal.pojo.SearchItem;
 import com.ppshop.portal.pojo.SearchResult;
 import com.ppshop.portal.service.SearchService;
 

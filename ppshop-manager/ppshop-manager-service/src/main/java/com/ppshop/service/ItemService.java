@@ -27,4 +27,8 @@ public interface ItemService {
 	PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception ;
 	
 	PpShopResult deleteItem(String params);
+	
+	void saveSearchItem(long itemId);
+	
+	void deleteSearchItem(long itemId);
 }

@@ -13,7 +13,7 @@
         </tr>
     </thead>
 </table>
-<div id="itemEditWindow" class="easyui-window" title="编辑商品" data-options="modal:true,closed:true,iconCls:'icon-save',href:'/item-edit'" style="width:80%;height:80%;padding:10px;">
+<div id="itemEditWindow" class="easyui-window" title="编辑商品" data-options="modal:true,closed:true,iconCls:'icon-save',href:'/item-param-edit'" style="width:80%;height:80%;padding:10px;">
 </div>
 <script>
 
@@ -49,7 +49,21 @@
         text:'编辑',
         iconCls:'icon-edit',
         handler:function(){
-        	$.messager.alert('提示','该功能未实现!');
+        	var ids = getSelectionsIds();
+        	if(ids.length == 0){
+        		$.messager.alert('提示','未选中商品规格!');
+        		return ;
+        	}
+        	if(ids.indexOf(',') > 0){
+        		$.messager.alert('提示','只能选择一个!');
+        		return ;
+        	}
+        	$("#itemEditWindow").window({
+        		onLoad :function(){
+        			//回显数据
+        			var data = $("#itemParamList").datagrid("getSelections")[0];
+        		}
+        	}).window("open");
         }
     },{
         text:'删除',

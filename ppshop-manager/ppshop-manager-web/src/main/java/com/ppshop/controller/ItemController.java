@@ -1,14 +1,11 @@
 package com.ppshop.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ppshop.common.pojo.EUDataGridResult;
@@ -46,6 +43,7 @@ public class ItemController {
 	@Autowired
 	private ItemParamItemService itemParamItemService;
 	
+	
 	@RequestMapping("/{itemId}")
 	@ResponseBody
 	public TbItem getItemById(@PathVariable Long itemId){
@@ -78,6 +76,8 @@ public class ItemController {
 	@ResponseBody
 	public PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception{
 		PpShopResult result = itemService.createItem(tbItem, desc, itemParams);
+		//添加到solr索引库
+		itemService.saveSearchItem(tbItem.getId());
 		return result;
 	}
 	
@@ -114,6 +114,11 @@ public class ItemController {
 	@ResponseBody
 	public PpShopResult deletItem(@RequestBody String params){
 		PpShopResult ppShopResult = itemService.deleteItem(params);
+		//删除索引库商品
+		String[] itemIds = params.split(",");
+		for (String str : itemIds){
+			itemService.deleteSearchItem(Long.parseLong(str));
+		}
 		return ppShopResult;	
 	}
 }

@@ -9,8 +9,11 @@
     <result column="updated" property="updated" jdbcType="TIMESTAMP" />
   </resultMap>
   
-  <select id="getItemParamList"  resultMap="BaseResultMap">
-       select * from tb_item_param
+  <select id="getItemParamList"  resultType="com.ppshop.pojo.TbItemParam">
+       select t.id as id,t.item_cat_id as itemCatId,t.param_data as paramData,t.created as created,
+              t.updated as updated,c.name as itemCatName
+       from tb_item_param t 
+       left join tb_item_cat c on c.id = t.item_cat_id
   </select>
   
   <select id="getItemParamByCid"  resultMap="BaseResultMap">
