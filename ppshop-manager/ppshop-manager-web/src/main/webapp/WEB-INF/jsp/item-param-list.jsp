@@ -62,6 +62,7 @@
         		onLoad :function(){
         			//回显数据
         			var data = $("#itemParamList").datagrid("getSelections")[0];
+        			//TODO
         		}
         	}).window("open");
         }

@@ -13,7 +13,7 @@
   <dependencies>
        <dependency>
             <groupId>com.ppshop</groupId>
-		    <artifactId>ppshop-manager-mapper	</artifactId>
+		    <artifactId>ppshop-manager-mapper</artifactId>
 		    <version>0.0.1-SNAPSHOT</version>
        </dependency>
        <dependency>

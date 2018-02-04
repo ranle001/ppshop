@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<table cellpadding="5" style="margin-left: 30px" id="itemParamAddTable" class="itemParam">
+<table cellpadding="5" style="margin-left: 30px" id="itemParamEditTable" class="itemParam">
 	<tr>
 		<td>商品类目:</td>
 		<td><a href="javascript:void(0)" class="easyui-linkbutton selectItemCat">选择类目</a> 
-			<input type="hidden" name="cid" style="width: 280px;"></input>
+			<input type="hidden" name="cid" style="width: 280px;" id="cid"></input>
 		</td>
 	</tr>
 	<tr class="hide addGroupTr">

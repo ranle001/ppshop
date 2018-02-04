@@ -1,11 +1,17 @@
  /*
  Date: 2014-01-21 
  */
+
+var project_path = '${pageContext.request.contextPath}';
 function login() {
-    return location.href = "http://localhost:8084/user/showLogin";
+//    return location.href = "http://localhost:8084/user/showLogin";
+//	var url = project_path+"/user/showLogin";
+//    window.location.href = url;
+    return location.href = "/user/login.html";
 }
 function regist() {
-    return location.href = "http://localhost:8084/user/showRegister";
+//    return location.href = "http://localhost:8084/user/showRegister";
+	return location.href = "/user/register.html";
 }
 function createCookie(a, b, c, d) {
     var d = d ? d : "/";
