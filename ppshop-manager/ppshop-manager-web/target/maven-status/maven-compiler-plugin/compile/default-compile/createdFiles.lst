@@ -6,3 +6,4 @@ com\ppshop\controller\PictureController.class
 com\ppshop\controller\ContentCategoryController.class
 com\ppshop\controller\ItemCatController.class
 com\ppshop\controller\ItemParamController.class
+com\ppshop\controller\IndexController.class

@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import com.ppshop.common.pojo.PpShopResult;
+import com.ppshop.common.utils.CookieUtils;
 import com.ppshop.common.utils.ExceptionUtil;
 import com.ppshop.common.utils.JsonUtils;
 import com.ppshop.mapper.TbUserMapper;
@@ -60,7 +64,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public PpShopResult userLogin(String username, String password) {
+	public PpShopResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response) {
 		List<TbUser> users = tbUserMapper.getUsersByUsername(username);
 		if (null == users || users.size() == 0){
 			return PpShopResult.build(400, "用户名或者密码错误");
@@ -76,6 +80,8 @@ public class UserServiceImpl implements UserService{
 		//把用户信息写入redis
 		jedisClientSingle.set(REDIS_USER_SESSION_KEY + ":" +token, JsonUtils.objectToJson(user));
 		jedisClientSingle.expire(REDIS_USER_SESSION_KEY + ":" +token, Integer.parseInt(SSO_SESSION_EXPIRE));
+		//写入cookie
+		CookieUtils.setCookie(request, response, "PP_TOKEN", token);
 		return PpShopResult.ok(token);
 	}
 

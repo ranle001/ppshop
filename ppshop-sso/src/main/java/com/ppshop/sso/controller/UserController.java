@@ -15,7 +15,6 @@ import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.common.utils.ExceptionUtil;
 import com.ppshop.pojo.TbUser;
 import com.ppshop.sso.service.UserService;
-import com.ppshop.sso.utils.CookieUtils;
 
 @Controller
 @RequestMapping("/user")
@@ -80,12 +79,7 @@ public class UserController {
 	public PpShopResult login(TbUser tbUser, HttpServletRequest request,
 			HttpServletResponse response){
 		try {
-			PpShopResult result = userService.userLogin(tbUser.getUsername(), tbUser.getPassword());
-			if (result.getStatus() == 200) {
-				String token = (String) result.getData();
-				//写入cookie
-				CookieUtils.setCookie(request, response, "PP_TOKEN", token);
-			}		
+			PpShopResult result = userService.userLogin(tbUser.getUsername(), tbUser.getPassword(), request, response);	
 			return result;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -102,13 +96,12 @@ public class UserController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		if (StringUtils.isBlank(callback)) {
-			return callback;
-		} else {
+		if (!StringUtils.isBlank(callback)) {
 			MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(result);
 			mappingJacksonValue.setJsonpFunction(callback);
 			return mappingJacksonValue;
 		}
+		return result;
 	}
 	
 	@RequestMapping("/logOut/{token}")

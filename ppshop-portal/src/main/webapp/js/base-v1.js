@@ -4,14 +4,10 @@
 
 var project_path = '${pageContext.request.contextPath}';
 function login() {
-//    return location.href = "http://localhost:8084/user/showLogin";
-//	var url = project_path+"/user/showLogin";
-//    window.location.href = url;
-    return location.href = "/user/login.html";
+    return location.href = "http://localhost:8085/page/login";
 }
 function regist() {
-//    return location.href = "http://localhost:8084/user/showRegister";
-	return location.href = "/user/register.html";
+    return location.href = "http://localhost:8085/page/register";
 }
 function createCookie(a, b, c, d) {
     var d = d ? d : "/";

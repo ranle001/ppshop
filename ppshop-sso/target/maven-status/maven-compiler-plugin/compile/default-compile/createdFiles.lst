@@ -4,4 +4,3 @@ com\ppshop\sso\service\Impl\JedisClientSingle.class
 com\ppshop\sso\controller\UserController.class
 com\ppshop\sso\service\UserService.class
 com\ppshop\sso\service\Impl\UserServiceImpl.class
-com\ppshop\sso\utils\CookieUtils.class

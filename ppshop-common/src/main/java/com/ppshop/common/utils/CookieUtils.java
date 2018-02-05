@@ -1,4 +1,4 @@
-package com.ppshop.sso.utils;
+package com.ppshop.common.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -7,6 +7,8 @@ import java.net.URLEncoder;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+
 
 
 /**
