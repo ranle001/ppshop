@@ -4,12 +4,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import com.ppshop.common.pojo.PpShopResult;
+import com.ppshop.common.utils.ExceptionUtil;
 import com.ppshop.common.utils.JsonUtils;
 import com.ppshop.mapper.TbUserMapper;
 import com.ppshop.pojo.TbUser;
@@ -75,5 +77,30 @@ public class UserServiceImpl implements UserService{
 		jedisClientSingle.set(REDIS_USER_SESSION_KEY + ":" +token, JsonUtils.objectToJson(user));
 		jedisClientSingle.expire(REDIS_USER_SESSION_KEY + ":" +token, Integer.parseInt(SSO_SESSION_EXPIRE));
 		return PpShopResult.ok(token);
+	}
+
+	@Override
+	public PpShopResult getUserByToken(String token) {
+		//根据token从redis中查询用户信息
+		String json = jedisClientSingle.get(REDIS_USER_SESSION_KEY + ":" + token);
+		if (StringUtils.isBlank(json)) {
+			return PpShopResult.build(400, "此session已经过期，请重新登录");
+		}
+		//更新过期时间
+		jedisClientSingle.expire(REDIS_USER_SESSION_KEY + ":" + token, Integer.parseInt(SSO_SESSION_EXPIRE));
+		//返回用户信息
+		return PpShopResult.ok(JsonUtils.jsonToPojo(json, TbUser.class));
+	}
+	
+	@Override
+	public PpShopResult removeToken(String token) {
+		//从redis中删除用户信息
+		try {
+			jedisClientSingle.del(REDIS_USER_SESSION_KEY + ":" + token);
+			return PpShopResult.ok();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return PpShopResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
 	}
 }

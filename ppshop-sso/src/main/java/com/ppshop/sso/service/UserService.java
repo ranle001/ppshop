@@ -9,4 +9,8 @@ public interface UserService {
 	PpShopResult createUser(TbUser tbUser);
 	
 	PpShopResult userLogin(String username, String password);
+	
+	PpShopResult getUserByToken(String token);
+	
+	PpShopResult removeToken(String token);
 }
