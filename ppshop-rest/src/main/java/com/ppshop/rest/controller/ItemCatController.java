@@ -25,7 +25,7 @@ import com.ppshop.rest.service.ItemCatService;
 public class ItemCatController {
 	
 	@Autowired
-	private 	ItemCatService itemCatService;
+	private ItemCatService itemCatService;
 	//spring4.1以前的方法
 //	@RequestMapping(value="/itemcat/list",produces=MediaType.APPLICATION_JSON_VALUE+";charset=utf-8")
 //	@ResponseBody

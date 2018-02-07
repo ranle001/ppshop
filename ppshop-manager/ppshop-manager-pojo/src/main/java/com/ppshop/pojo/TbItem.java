@@ -114,4 +114,12 @@ public class TbItem{
     public void setUpdated(Date updated) {
         this.updated = updated;
     } 
+    
+//    public String[] getImages(){
+//		if (this.image != null){
+//			String[] strs = this.image.split(",");
+//			return strs;
+//		}
+//		return null;
+//	}
 }

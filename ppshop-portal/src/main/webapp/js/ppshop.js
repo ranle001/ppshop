@@ -9,7 +9,6 @@ var TT = PPSHOP = {
 			dataType : "jsonp",
 			type : "GET",
 			success : function(data){
-				alert(data);
 				if(data.status == 200){
 					var username = data.data.username;
 					var html = username + "，欢迎来到胖胖！<a href='' onclick='logOut(\""+_ticket+"\")' class=\"link-logout\">[退出]</a>";

@@ -19,7 +19,7 @@
 </head>
 <body class="easyui-layout">
     <div data-options="region:'west',title:'菜单',split:true" style="width:180px;">
-    	<!-- <ul id="menu" class="easyui-tree" style="margin-top: 10px;margin-left: 5px;">
+    	<ul id="menu" class="easyui-tree" style="margin-top: 10px;margin-left: 5px;">
          	<li>
          		<span>商品管理</span>
          		<ul>
@@ -35,7 +35,7 @@
 	         		<li data-options="attributes:{'url':'content'}">内容管理</li>
 	         	</ul>
          	</li>
-         </ul> -->
+         </ul>
          <ul class="easyui-tree" data-options="url:'/index/menu'"></ul> 
     </div>
     <div data-options="region:'center',title:''">
@@ -47,9 +47,8 @@
     </div>
     
 <script type="text/javascript">
-$(function(){
-	
-	/* $('#menu').tree({
+$(function(){	
+	$('#menu').tree({
 		onClick: function(node){
 			if($('#menu').tree("isLeaf",node.target)){
 				var tabs = $("#tabs");
@@ -66,7 +65,7 @@ $(function(){
 				}
 			}
 		}
-	}); */
+	});
 });
 </script>
 </body>
