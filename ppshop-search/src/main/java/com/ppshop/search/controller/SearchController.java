@@ -24,6 +24,13 @@ public class SearchController {
 	@Autowired
 	private SearchService searchService;
 	
+	/**
+	 * 搜索商品
+	 * @param queryString
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
 	@RequestMapping(value="/query", method=RequestMethod.GET)
 	@ResponseBody
 	public PpShopResult search(@RequestParam("q")String queryString,

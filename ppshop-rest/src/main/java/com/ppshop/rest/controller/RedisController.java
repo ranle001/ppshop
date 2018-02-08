@@ -15,6 +15,11 @@ public class RedisController {
 	@Autowired
 	private RedisService redisService;
 	
+	/**
+	 * 删除缓存中商品信息
+	 * @param contentCid
+	 * @return
+	 */
 	@RequestMapping("/content/{contentCid}")
 	@ResponseBody
 	public PpShopResult contentCacheSync(@PathVariable Long contentCid){

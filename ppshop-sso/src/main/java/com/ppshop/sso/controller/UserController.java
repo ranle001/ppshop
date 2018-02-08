@@ -22,6 +22,14 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	
+	/**
+	 * 检查登录信息
+	 * @param param
+	 * @param type
+	 * @param callback
+	 * @return
+	 */
 	@RequestMapping("/check/{param}/{type}")
 	@ResponseBody
 	public Object checkData(@PathVariable String param,@PathVariable Integer type, String callback){
@@ -60,7 +68,11 @@ public class UserController {
 		return result;
 	}
 
-	//创建用户
+	/**
+	 * 注册用户
+	 * @param tbUser
+	 * @return
+	 */
 	@RequestMapping("/register")
 	@ResponseBody
 	public PpShopResult createUser(TbUser tbUser){
@@ -73,7 +85,13 @@ public class UserController {
 		}
 	}
 	
-	//用户登录
+	/**
+	 * 用户登录
+	 * @param tbUser
+	 * @param request
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/login")
 	@ResponseBody
 	public PpShopResult login(TbUser tbUser, HttpServletRequest request,
@@ -87,6 +105,12 @@ public class UserController {
 		}
 	}
 	
+	/**
+	 * 从cookies中获取登录信息
+	 * @param token
+	 * @param callback
+	 * @return
+	 */
 	@RequestMapping("/token/{token}")
 	@ResponseBody
 	public Object getUserByToken(@PathVariable String token, String callback){
@@ -104,6 +128,12 @@ public class UserController {
 		return result;
 	}
 	
+	/**
+	 * 登出
+	 * @param token
+	 * @param callback
+	 * @return
+	 */
 	@RequestMapping("/logOut/{token}")
 	@ResponseBody
 	public Object logOut(@PathVariable String token, String callback){

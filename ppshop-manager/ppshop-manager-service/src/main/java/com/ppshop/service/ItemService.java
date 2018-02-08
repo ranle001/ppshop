@@ -23,12 +23,29 @@ public interface ItemService {
 	 * @return EUDataGridResult（EU页面需要的格式）
 	 */
 	EUDataGridResult getItemList(int page, int rows);
-	
+	/**
+	 * 添加商品
+	 * @param tbItem
+	 * @param desc
+	 * @param itemParams
+	 * @return
+	 * @throws Exception
+	 */
 	PpShopResult createItem(TbItem tbItem, String desc, String itemParams) throws Exception ;
-	
+	/**
+	 * 删除商品
+	 * @param params
+	 * @return
+	 */
 	PpShopResult deleteItem(String params);
-	
+	/**
+	 * 添加商品到搜索服务器
+	 * @param itemId
+	 */
 	void saveSearchItem(long itemId);
-	
+	/**
+	 * 从搜索服务器删除商品
+	 * @param itemId
+	 */
 	void deleteSearchItem(long itemId);
 }

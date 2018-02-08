@@ -19,6 +19,12 @@ public class ItemController {
 	@Autowired
 	private ItemService itemService;
 	
+	/**
+	 * 根据商品ID获取商品信息，展示商品页面
+	 * @param itemId
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping("/item/{itemId}")
 	public String showItem(@PathVariable Long itemId, Model model){
 		SearchItemInfo tbItem = itemService.getItemById(itemId);

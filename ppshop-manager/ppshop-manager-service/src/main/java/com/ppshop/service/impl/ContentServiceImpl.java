@@ -60,7 +60,7 @@ public class ContentServiceImpl implements ContentService{
 		euDataGridResult.setTotal(pageInfo.getTotal());
 		return euDataGridResult;
 	}
-
+	
 	@Override
 	public PpShopResult insertContent(TbContent tbContent) {
 		tbContent.setUpdated(new Date());
@@ -69,7 +69,7 @@ public class ContentServiceImpl implements ContentService{
 		this.cleanCache(tbContent.getCategoryId());
 		return PpShopResult.ok();
 	}
-	
+
 	@Override
 	public PpShopResult updateContent(TbContent tbContent) {
 		tbContent.setUpdated(new Date());

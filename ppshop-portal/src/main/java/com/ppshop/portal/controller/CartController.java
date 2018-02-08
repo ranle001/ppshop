@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.ppshop.common.pojo.PpShopResult;
 import com.ppshop.portal.pojo.CartItem;
 import com.ppshop.portal.service.CartService;
 
@@ -34,10 +33,14 @@ public class CartController {
 	@RequestMapping("/add/{itemId}")
 	public String addCartItem(@PathVariable Long itemId, @RequestParam(defaultValue="1")Integer num,
 			HttpServletRequest request, HttpServletResponse response){
-		PpShopResult result = cartService.addCartItem(itemId, num, request, response);
+		cartService.addCartItem(itemId, num, request, response);
 		return "redirect:/cart/success.html";		
 	}
 	
+	/**
+	 * 添加商品到购物车后返回成功页面
+	 * @return
+	 */
 	@RequestMapping("/success")
 	public String showSuccess(){
 		return "cartSuccess";
@@ -56,5 +59,13 @@ public class CartController {
 		model.addAttribute("cartList",cartItems);
 		return "cart";
 	}
-
+	
+	/**
+	 * 删除购物车商品
+	 */
+	@RequestMapping("/delete/{itemId}")
+	public String deleteCartItem(HttpServletRequest request, HttpServletResponse response,@PathVariable Long itemId){
+		cartService.deleteCartItem(itemId, request, response);
+		return "redirect:/cart/showCart.html";
+	}
 }

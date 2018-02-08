@@ -31,6 +31,11 @@ public class ContentController {
 	@Autowired
 	private ContentService contentService;
 	
+	/**
+	 * 获取首页大广告位内容
+	 * @param contentCategoryId
+	 * @return
+	 */
 	@RequestMapping("/list/{contentCategoryId}")
 	@ResponseBody
 	public PpShopResult getContentList(@PathVariable Long contentCategoryId){

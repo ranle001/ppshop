@@ -15,6 +15,11 @@ public class IndexController {
 	@Autowired 
 	private ContentService contentService;
 	
+	/**
+	 * 跳转商场首页
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping("/index")
 	public String showIndex(Model model){
 		String result = contentService.getContentList();

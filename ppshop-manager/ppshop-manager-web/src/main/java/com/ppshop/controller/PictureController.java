@@ -30,6 +30,11 @@ public class PictureController {
 	@Autowired
 	private PictureService pictureService;
 	
+	/**
+	 * 上传图片
+	 * @param uploadFile
+	 * @return
+	 */
 	@RequestMapping("/pic/upload")
     @ResponseBody
     public String pictureUpload(MultipartFile uploadFile){

@@ -2,6 +2,11 @@ package com.ppshop.search.pojo;
 
 import java.util.List;
 
+/**
+ * 搜索通用实体类
+ * @author Administrator
+ *
+ */
 public class SearchResult {
 	//商品列表
 	private List<SearchItem> iSearchItems;

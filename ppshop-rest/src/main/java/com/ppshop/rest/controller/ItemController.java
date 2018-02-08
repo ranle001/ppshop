@@ -15,6 +15,11 @@ public class ItemController {
 	@Autowired 
 	private ItemService itemService;
 	
+	/**
+	 * 获取商品基本信息
+	 * @param itemId
+	 * @return
+	 */
 	@RequestMapping("/info/{itemId}")
 	@ResponseBody
 	public PpShopResult getItemBaseInfo(@PathVariable Long itemId){
@@ -22,6 +27,11 @@ public class ItemController {
 		return result;
 	}
 	
+	/**
+	 * 获取商品描述信息
+	 * @param itemId
+	 * @return
+	 */
 	@RequestMapping("/desc/{itemId}")
 	@ResponseBody
 	public PpShopResult getItemDesc(@PathVariable Long itemId){
@@ -29,6 +39,11 @@ public class ItemController {
 		return result;
 	}
 	
+	/**
+	 * 获取商品规格信息
+	 * @param itemId
+	 * @return
+	 */
 	@RequestMapping("/param/{itemId}")
 	@ResponseBody
 	public PpShopResult getItemParam(@PathVariable Long itemId){

@@ -20,6 +20,13 @@ public class SearchController {
 	@Autowired
 	private SearchService searchService;
 	
+	/**
+	 * 搜索商品，返回搜索信息页面
+	 * @param queryString
+	 * @param page
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping("/search")
 	public String search(@RequestParam("q")String queryString, @RequestParam(defaultValue="1")Integer page, Model model){
 		if (queryString != null){

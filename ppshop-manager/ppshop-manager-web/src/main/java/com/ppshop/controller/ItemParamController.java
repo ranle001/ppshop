@@ -31,6 +31,12 @@ public class ItemParamController {
 	@Autowired
 	private ItemParamService itemParamService;
 	
+	/**
+	 * 获取商品规格信息
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
 	@RequestMapping("/list")
 	@ResponseBody
 	public EUDataGridResult getItemParamList(Integer page, Integer rows){
@@ -38,6 +44,11 @@ public class ItemParamController {
 		return result;
 	}
 	
+	/**
+	 * 根据itemCatId获取商品规格信息
+	 * @param itemCatId
+	 * @return
+	 */
 	@RequestMapping("/query/itemcatid/{itemCatId}")
 	@ResponseBody
 	public PpShopResult getItemParamById(@PathVariable Long itemCatId){
@@ -45,6 +56,12 @@ public class ItemParamController {
 		return result;
 	}
 	
+	/**
+	 * 添加规格信息
+	 * @param paramData
+	 * @param cid
+	 * @return
+	 */
 	@RequestMapping("/save/{cid}")
 	@ResponseBody
 	public PpShopResult insertItemParam(String paramData, @PathVariable Long cid){

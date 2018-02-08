@@ -1,5 +1,10 @@
 package com.ppshop.search.pojo;
 
+/**
+ * 搜索商品信息
+ * @author Administrator
+ *
+ */
 public class SearchItem {
 	
 	private Long id;

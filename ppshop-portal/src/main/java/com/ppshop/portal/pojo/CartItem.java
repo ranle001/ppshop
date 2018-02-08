@@ -1,5 +1,11 @@
 package com.ppshop.portal.pojo;
 
+
+/**
+ * 购物车商品信息
+ * @author Administrator
+ *
+ */
 public class CartItem {
 	private Long id;
 	private String title;

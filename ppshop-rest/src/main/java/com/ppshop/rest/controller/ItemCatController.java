@@ -36,6 +36,11 @@ public class ItemCatController {
 //		return result;
 //	}
 	//spring4.1以后的方法
+	/**
+	 * 获取商品分类信息列表
+	 * @param callback
+	 * @return
+	 */
 	@RequestMapping(value="/itemcat/list")
 	@ResponseBody
 	public Object getItemCatList(String callback){

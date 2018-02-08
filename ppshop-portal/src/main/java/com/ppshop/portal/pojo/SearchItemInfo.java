@@ -1,8 +1,13 @@
 package com.ppshop.portal.pojo;
 
-import java.io.Serializable;
 import java.util.Date;
 
+
+/**
+ * 商品详情
+ * @author Administrator
+ *
+ */
 public class SearchItemInfo{
 	private Long id;
 

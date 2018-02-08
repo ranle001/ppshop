@@ -37,7 +37,7 @@ public class CartServiceImpl implements CartService {
 	 * 添加商品到购物车(cookies)
 	 */
 	@Override
-	public PpShopResult addCartItem(Long itemId, int num, HttpServletRequest request, HttpServletResponse response) {
+	public PpShopResult addCartItem(long itemId, int num, HttpServletRequest request, HttpServletResponse response) {
 		try {
 			//取商品信息
 			CartItem cartItem = null;
@@ -97,5 +97,23 @@ public class CartServiceImpl implements CartService {
 	public List<CartItem> getCartItemList(HttpServletRequest request, HttpServletResponse response) {
 		List<CartItem> iCartItems = getCartItemList(request);
 		return iCartItems;
+	}
+	
+	/**
+	 * 删除购物车商品
+	 */
+	@Override
+	public PpShopResult deleteCartItem(long itemId, HttpServletRequest request, HttpServletResponse response) {
+		//从cookies取商品列表
+		List<CartItem> iCartItems = getCartItemList(request);
+		//从列表找到商品删除
+		for (CartItem cartItem : iCartItems){
+			if (cartItem.getId().equals(itemId)) {
+				iCartItems.remove(cartItem);
+				break;
+			}
+		}
+		CookieUtils.setCookie(request, response, "PP_CART", JsonUtils.objectToJson(iCartItems), true);
+ 		return PpShopResult.ok();
 	}
 }

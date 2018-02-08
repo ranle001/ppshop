@@ -4,10 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ppshop.service.ItemParamItemService;
 
@@ -30,6 +28,12 @@ public class ItemParamItemController {
 	@Autowired
 	private ItemParamItemService itemParamItemService;
 	
+	/**
+	 * 获取商品规格详细
+	 * @param itemId
+	 * @param request
+	 * @return
+	 */
 	@RequestMapping("/showItem/{itemId}")
 	public String getItemParamList(@PathVariable Long itemId, HttpServletRequest request){
 		String text = itemParamItemService.getItemParamItemById(itemId);
