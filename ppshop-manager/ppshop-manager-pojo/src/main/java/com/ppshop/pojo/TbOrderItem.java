@@ -1,5 +1,10 @@
 package com.ppshop.pojo;
 
+/**
+ * 订单明细
+ * @author pangkaiguang
+ *
+ */
 public class TbOrderItem {
     private String id;
 

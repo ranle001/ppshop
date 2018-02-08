@@ -1,8 +1,11 @@
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbContentCategoryMapper.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbUserMapper.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemParamMapper.java
-D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemParamItemMapper.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbOrderItemMapper.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbContentMapper.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemParamItemMapper.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemMapper.java
-D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemDescMapper.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbOrderMapper.java
 D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemCatMapper.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbItemDescMapper.java
+D:\workspace\ppshop\ppshop-manager\ppshop-manager-mapper\src\main\java\com\ppshop\mapper\TbOrderShippingMapper.java

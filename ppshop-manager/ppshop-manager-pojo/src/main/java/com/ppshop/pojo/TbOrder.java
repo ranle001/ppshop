@@ -2,6 +2,11 @@ package com.ppshop.pojo;
 
 import java.util.Date;
 
+/**
+ * 订单信息
+ * @author pangkaiguang
+ *
+ */
 public class TbOrder {
     private String orderId;
 
