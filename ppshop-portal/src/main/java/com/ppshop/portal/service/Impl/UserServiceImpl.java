@@ -25,6 +25,9 @@ public class UserServiceImpl implements UserService{
 	
 	@Value("${SSO_PAGE_LOGIN}")
 	public String SSO_PAGE_LOGIN;
+	
+	@Value("${PORTAL_BASE_URL}")
+	public String PORTAL_BASE_URL;
 
 	
 	@Override

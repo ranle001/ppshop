@@ -44,7 +44,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 		if (null == tbUser){
 			//跳转到登录页面，把用户请求的url作为参数传递到登录页面
 			response.sendRedirect(userService.SSO_BASE_URL+userService.SSO_PAGE_LOGIN 
-					+ "?redirect=" + request.getRequestURI());
+					+ "?redirect=" + userService.PORTAL_BASE_URL + request.getRequestURI());
 			//返回false
 			return false;
 		}
