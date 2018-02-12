@@ -77,6 +77,7 @@ public class OrderServiceImpl implements OrderService {
 				tbOrderItemMapper.insertOrderItem(tbOrderItem);
 			}
 			//插入物流表
+			orderShipping.setOrderId(orderId + "");
 			orderShipping.setCreated(new Date());
 			orderShipping.setUpdated(new Date());
 			tbOrderShippingMapper.insertOrderShipping(orderShipping);

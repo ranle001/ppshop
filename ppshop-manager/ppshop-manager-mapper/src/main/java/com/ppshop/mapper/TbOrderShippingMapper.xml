@@ -15,10 +15,10 @@
     <result column="updated" property="updated" jdbcType="TIMESTAMP" />
   </resultMap>
   
-  <insert id="insertOrderItem">
+  <insert id="insertOrderShipping">
       insert into tb_order_shipping (order_id,receiver_name,receiver_phone,receiver_mobile,receiver_state,receiver_city
       ,receiver_district,receiver_address,receiver_zip,created,updated) values 
-        (#{orderId},#{receiverName},#{receiverPhone},#{receiverMobile},#{receiver_state},#{receiver_city},#{receiver_district}
-        ,#{receiver_address},#{receiver_zip},#{created},#{updated});
+        (#{orderId},#{receiverName},#{receiverPhone},#{receiverMobile},#{receiverState},#{receiverCity},#{receiverDistrict}
+        ,#{receiverAddress},#{receiverZip},#{created},#{updated});
   </insert>
 </mapper>
